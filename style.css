@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.main-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #111;
+    font-family: 'Franklin Gothic Medium';
+}
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+  }
+
+  .waviy {
+    position: relative;
+  }
+  
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
+
+  #inpNumber{
+      width: 150px;
+      padding: 10px;
+      border-radius: 10px 0;
+      transition: width 1s ease-in-out;
+      -webkit-transition: width 0.4s ease-in-out;
+  }
+
+  #inpNumber:focus{
+    width: 200px;
+    border-bottom:2px solid purple;
+  }
+
+  .option-container{
+      display: flex;
+      padding-bottom: 10px;
+  }
+
+  .from-container{
+    padding: 10px;
+  }
+
+  .to-container{
+    padding: 10px;
+  }
+
+  .from-container #fromSelect{
+    padding: 5px;
+  }
+
+  .to-container #toSelect{
+    padding: 5px;
+  }
+
+  label{
+    font-size: 20px;
+    color: #fff;
+  }
+
+#btnSwap {
+  background: rgba(0, 47, 255, 0.61);
+  color: rgb(0, 0, 0);
+  border: none;
+  font-weight: 700;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+#btnSwap:hover {
+  background-color: rgba(0, 47, 255, 0.089);
+  color: rgb(255, 255, 255);
+}
+
+#btnSwap:before,
+#btnSwap:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #000;
+  transition:400ms ease all;
+}
+#btnSwap:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+#btnSwap:hover:before,
+#btnSwap:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+#btnSubmit{
+  width: 130px;
+  height: 40px;
+  border: none;
+  color: black;
+  background-color: rgb(27, 82, 34);
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 rgb(0, 201, 27) ;
+  transition: ease 0.4s;
+  outline: none;
+  font-weight: 700;
+}
+
+#btnSubmit:hover{
+  box-shadow: inset 130px 0 0 0 rgb(7, 172, 29);
+  color: white;
+  cursor: pointer;
+}
+
+#result{
+  color: #fff;
+  font-size: 20px;
+  margin: 10px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    
+    <main class="main-container">
+        <header>
+            <div class="waviy">
+              <span style="--i:1">C</span>
+              <span style="--i:2">O</span>
+              <span style="--i:3">N</span>
+              <span style="--i:4">V</span>
+              <span style="--i:5">E</span>
+              <span style="--i:6">R</span>
+              <span style="--i:7">T</span>
+              <span style="--i:8">E</span>
+              <span style="--i:9">R</span>
+             </div>
+        </header>
+    
+        <input required id="inpNumber" type="text" placeholder="Enter number"><br>
+        
+
+        <div class="option-container">
+            <div class="from-container">
+                <label for="from">From : </label>
+                <select name="selection" id="fromSelect">
+                    <option id="fromDecimal" value="decimal">Decimal</option>
+                    <option id="fromBinary" value="binary">Binary</option>
+                    <option id="fromHexa" value="hexadecimal">Hexadecimal</option>
+                    <option id="fromOctal" value="octal">Octal</option>
+                </select>
+            </div>
+
+            <div class="to-container">
+                <label for="to">To : </label>
+                <select name="selection1" id="toSelect">
+                    <option id="toDecimal" value="decimal">Decimal</option>
+                    <option id="toBinary" value="binary">Binary</option>
+                    <option id="toHexa" value="hexadecimal">Hexadecimal</option>
+                    <option id="toOctal" value="octal">Octal</option>
+                </select><br>
+            </div>
+        </div>
+
+        <button id="btnSwap" class="custom-btn">Swap</button><br>
+
+        <button id="btnSubmit" > Submit</button><br>
+        <span id="result">Result:</span>
+
+    </main>
+    
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
